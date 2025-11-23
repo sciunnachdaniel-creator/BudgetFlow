@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <circle cx="48" cy="48" r="44" fill="#6366f1"/>
+  <path d="M48,48 L48,12 A36,36 0 1,1 20,76 Z" fill="#10b981"/>
+  <path d="M48,48 L20,76 A36,36 0 0,0 48,84 Z" fill="#f59e0b"/>
+  <text x="48" y="56" text-anchor="middle" font-size="24" fill="#fff" font-weight="bold" font-family="Segoe UI, Arial">BF</text>
+</svg>
