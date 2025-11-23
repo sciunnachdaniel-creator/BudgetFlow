@@ -1,34 +1,82 @@
-<html>
+Skip to content
+Navigation Menu
+sciunnachdaniel-creator
+BudgetFlow
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Commit 99f030e
+sciunnachdaniel-creator
+sciunnachdaniel-creator
+authored
+2 hours ago
+·
+·
+Verified
+Add manifest and mobile app capabilities to HTML
+main
+1 parent 
+5623c19
+ commit 
+99f030e
+File tree
+Filter files…
+index.html
+1 file changed
++4
+-0
+lines changed
+Search within code
+ 
+‎index.html‎
++4
+Lines changed: 4 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -2,27 +2,31 @@
+<html lang="it">
 <head>
-    <title>Budget Flow</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetFlow - WebApp</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    </style>
 </head>
-<body>
-    <h1>Manage Your Expenses</h1>
-    <div id="expenses">
-        <h2>Accessory Expenses</h2>
-        <ul id="accessory-expenses-list">
-            <li>
-                Accessory 1
-                <button onclick="editExpense('Accessory 1')">Edit</button>
-                <button onclick="deleteExpense('Accessory 1')">Delete</button>
-            </li>
-            <li>
-                Accessory 2
-                <button onclick="editExpense('Accessory 2')">Edit</button>
-                <button onclick="deleteExpense('Accessory 2')">Delete</button>
-            </li>
-        </ul>
-        <script>
-            function editExpense(expense) {
-                // Function to edit the specified expense
-                alert('Editing ' + expense);
-            }
-            function deleteExpense(expense) {
-                const listItem = document.querySelector(`li:contains('${expense}')`);
-                listItem.parentNode.removeChild(listItem);
-                alert(expense + ' has been deleted.');
-            }
-        </script>
-    </div>
-</body>
-</html>
+<body class="bg-slate-50 text-slate-800">
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
+
+There are no files selected for viewing L2 to R11 selected.
